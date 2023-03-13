@@ -135,4 +135,5 @@ energy_RBM = data["Energy"]["Mean"]["real"]
 plt.plot(iters_RBM, energy_RBM, '-o', color='red', label='Energy (RBM)')
 plt.hlines(y=exact_gs_energy, xmin=0, xmax=iters_RBM[-1], linewidth=2, color='k', label='Exact')
 plt.legend()
+plt.savefig('energy_vs_iteration.png', bbox_inches = 'tight')
 plt.show()
