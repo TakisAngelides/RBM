@@ -42,8 +42,6 @@ def Qcharge(i):
 L = 6
 g = nk.graph.Hypercube(length=2*L, n_dim=1, pbc=False)
 
-print(g)
-
 # Define the Hilbert space based on this graph
 hi = nk.hilbert.Spin(s=0.5, N=g.n_nodes)
 
